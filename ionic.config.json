@@ -1,0 +1,7 @@
+{
+  "name": "CheckChoice",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
