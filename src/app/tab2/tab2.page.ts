@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ActionSheetController } from '@ionic/angular';
+import { ModalController } from '@ionic/angular';
+import { ChecklistFlagsModalComponent } from '../checklist-flags-modal/checklist-flags-modal.component';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +10,7 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class Tab2Page {
+  canidateName: string = '';
 
   constructor() {}
 

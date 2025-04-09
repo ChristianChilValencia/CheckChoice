@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Choose Options</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full">
+    <!-- Green Flags Section -->
+    <ion-item-divider>Green Flags</ion-item-divider>
+    <ion-item *ngFor="let item of greenSectionFlag">
+      <ion-label>{{ item.label }}</ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="item.checked"></ion-checkbox>
+    </ion-item>
+
+    <!-- Red Flags Section -->
+    <ion-item-divider>Red Flags</ion-item-divider>
+    <ion-item *ngFor="let item of redSectionFlag">
+      <ion-label>{{ item.label }}</ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="item.checked"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>
